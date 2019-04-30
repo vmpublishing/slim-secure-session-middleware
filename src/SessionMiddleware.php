@@ -88,7 +88,7 @@ class SessionMiddleware
      */
     protected function start(Request $request)
     {
-        $this->session->start($this->settings, $request->getHeaderLine('HTTP_USER_AGENT'));
+        $this->session->initialize($this->settings, $request->getHeaderLine('HTTP_USER_AGENT'));
         $this->session->start();
         $this->refreshSessionCookie();
     }
