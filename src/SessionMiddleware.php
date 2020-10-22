@@ -52,7 +52,7 @@ class SessionMiddleware
      *
      * @param array $settings Session settings
      */
-    public function __construct(\Adbar\Session $session, array $settings = [])
+    public function __construct(\Adbar\Session &$session, array $settings = [])
     {
         $this->session = $session;
         $this->settings = array_merge($this->settings, $settings);
