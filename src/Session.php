@@ -3,6 +3,7 @@
 namespace Adbar;
 
 use SecureSessionHandler;
+use RuntimeException;
 
 /**
  * Session
